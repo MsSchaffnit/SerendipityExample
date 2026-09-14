@@ -1,3 +1,8 @@
+#include "cashier.h"
+#include "invmenu.h"
+#include "bookinfo.h"
+#include "reports.h"
+
 #include <iostream>
 using namespace std;
 
@@ -34,13 +39,14 @@ int main()
 			switch (choice)
 			{ 
 				case 1: 
-					cout << "\nYou selected item 1.\n";
+					cin.ignore();
+					cashier();
 					break;
 				case 2: 
-					cout << "\nYou selected item 2.\n";
+					invMenu();
 					break;
 				case 3: 
-					cout << "\nYou selected item 3.\n";
+					reports();
 					break;
 				case 4: 
 					cout << "\nYou selected item 4.\n";

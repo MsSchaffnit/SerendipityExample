@@ -1,7 +1,8 @@
+#include "reports.h"
 #include <iostream>
 using namespace std;
 
-int main()
+void reports()
 {
 	int choice = 0;	// To hold the user's choice
 
@@ -37,22 +38,22 @@ int main()
 			switch (choice)
 			{ 
 				case 1: 
-					cout << "\nYou selected item 1.\n";
+					repListing();
 					break;
 				case 2: 
-					cout << "\nYou selected item 2.\n";
+					repWholesale();
 					break;
 				case 3: 
-					cout << "\nYou selected item 3.\n";
+					repRetail();
 					break;
 				case 4: 
-					cout << "\nYou selected item 4.\n";
+					repQty();
 					break;
 				case 5: 
-					cout << "\nYou selected item 5.\n";
+					repCost();
 					break;
 				case 6: 
-					cout << "\nYou selected item 6.\n";
+					repAge();
 					break;
 				case 7: 
 					cout << "\nYou selected item 7.\n";
@@ -63,5 +64,40 @@ int main()
 		cout << endl << endl;
 	}
 
-	return 0;
+}
+
+//repListing stub function
+void repListing()
+{
+	cout << "\nYou selected Inventory Listing.\n";
+}
+
+//repWholesale stub function
+void repWholesale()
+{
+	cout << "\nYou selected Inventory Wholesale Value.\n";
+}
+
+//repRetail stub function
+void repRetail()
+{
+	cout << "\nYou selected Inventory Retail Value.\n";
+}
+
+//repQty stub function
+void repQty()
+{
+	cout << "\nYou selected Listing By Cost.\n";
+}
+
+//repCost stub function
+void repCost()
+{
+	cout << "\nYou selected Listing by Cost.\n";
+}
+
+//repAge stub function
+void repAge()
+{
+	cout << "\nYou selected Listing by Age.\n";
 }

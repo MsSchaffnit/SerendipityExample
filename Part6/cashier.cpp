@@ -1,9 +1,10 @@
+#include "cashier.h"
 #include <iostream>
 #include <iomanip>
 #include <string>
 using namespace std;
 
-int main()
+void cashier()
 {
 	// Constants
 	const double SALES_TAX	= 0.06;	// The sales tax
@@ -104,5 +105,4 @@ int main()
 
 	} while (again == 'Y' || again == 'y');
 
-	return 0;
 }

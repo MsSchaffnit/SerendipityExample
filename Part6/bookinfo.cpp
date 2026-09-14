@@ -1,7 +1,8 @@
+#include "bookinfo.h"
 #include <iostream>
 using namespace std;
 
-int main()
+void bookInfo()
 {
 	cout << "\t\t\tSerendipity Booksellers\n";
 	cout << "\t\t\t    Book Information\n\n";
@@ -17,5 +18,4 @@ int main()
 
 	cout << endl << endl;
 
-	return 0;
 }
